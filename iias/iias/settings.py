@@ -82,7 +82,7 @@ DATABASES = {
         # 'NAME': BASE_DIR / 'db.sqlite3',
         "ENGINE": "mssql",
         "NAME": "iias",
-        "USER": "csiuser",
+        "USER": "",
         "PASSWORD": "",
         "HOST": "127.0.0.1",
         "PORT": "1433",
