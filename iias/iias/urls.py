@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('declaration/', include('declaration.urls', namespace='declaration')),   
     path('main/', include('main.urls', namespace='main')),
+        path('notice/', include('notice.urls', namespace='notice')), 
     re_path('.*', views.main),
 ]

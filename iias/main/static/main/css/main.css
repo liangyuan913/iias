@@ -22,6 +22,10 @@ body#main{
 	background: url("/static/main/img/background3.png") fixed;
 }
 
+body#notice{
+	background: url("/static/main/img/background4.png") fixed;
+}
+
 ul#menu{
 	margin-bottom: 30px;
 	text-align: right;

@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'declaration',
+    'notice',
     'main',
 ]
 
@@ -82,7 +83,7 @@ DATABASES = {
         "ENGINE": "mssql",
         "NAME": "iias",
         "USER": "csiuser",
-        "PASSWORD": "1qaz@WSX",
+        "PASSWORD": "",
         "HOST": "127.0.0.1",
         "PORT": "1433",
         "OPTIONS": {"driver": "ODBC Driver 17 for SQL Server", 
