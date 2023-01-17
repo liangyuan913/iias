@@ -1,0 +1,50 @@
+html, body {
+	margin: 0;
+	height: 100%;
+}
+
+body{
+	text-align: center;
+	color: #eee;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, .7);
+}
+
+body#about{
+	background: url("/static/main/img/background.png") fixed;
+}
+
+body#declaration{
+	background: url("/static/main/img/background2.png") fixed;
+}
+
+body#main{
+	background: url("/static/main/img/background3.png") fixed;
+}
+
+ul#menu{
+	margin-bottom: 30px;
+	text-align: right;
+	margin: 0;
+	float: left;
+	overflow: hidden;
+}
+
+ul#menu li{
+	display: inline-block;
+	margin-left: 36px;
+	border-color:#dee2e6 #dee2e6 #fff;
+}
+
+ul#menu li:first-child {
+  margin-left: 0;
+}
+
+ul#menu li a {
+  color: #FFFFFF;
+}
+
+ul#menu  li a:hover,
+ul#menu  li a.active {
+  color: #FFFF00;
+}
