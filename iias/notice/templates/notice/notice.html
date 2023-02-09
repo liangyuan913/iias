@@ -6,6 +6,7 @@
 {% block tag %}notice{% endblock %}
 {% block heading %}公告管理系統{% endblock %}
 {% block content %}
+<p><a class="btn" href="{% url 'notice:noticeCreate' %}">新增公告</a></p>
 <br>
 {% comment %}
 {% for notice in notices %}
@@ -16,7 +17,7 @@
 {% endfor %}
 {% endcomment %}
 {% for notice, comments in notices.items %}
-	<h3 id=title>{{ notice.title }}</h3>
+	<h3 id=title><a href="{% url 'notice:noticeRead' notice.id %}">{{ notice.title }}</a></h3>
 	<p id=issuingTime>發表時間：{{ notice.pubDateTime|date:'Y-m-d H:i:s' }}</p>
 	<div class="noticeContent">{{ notice.content|linebreaks|truncatewords_html:10 }}</div>
 	{% for comment in comments %}

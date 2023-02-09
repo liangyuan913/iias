@@ -9,8 +9,11 @@
 </head>
 <body id="{% block tag %}{% endblock %}">
 {% include 'main/menu.html' %}
-<h2>{% block heading %}{% endblock %}</h2>
-<p>{{like}}</p>
+<h2 id="h2_01">{% block heading %}{% endblock %}</h2>
+<p id="p_01">{{like}}</p>
+{% for message in messages %}
+	<p class="{{ message.tags }}">{{ message }}</p>
+{% endfor %}
 {% block content %}{% endblock %}
 </body>
 </html>

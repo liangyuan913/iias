@@ -4,14 +4,13 @@ html, body {
 }
 
 body{
-	text-align: center;
 	color: #eee;
 	padding: 20px;
 	background-color: rgba(0, 0, 0, .7);
 }
 
 body#about{
-	background: url("/static/main/img/background.png") fixed;
+	background: url("/static/main/img/background1.png") fixed;
 }
 
 body#declaration{
@@ -24,6 +23,14 @@ body#main{
 
 body#notice{
 	background: url("/static/main/img/background4.png") fixed;
+}
+
+#p_01, #h2_01{
+	text-align: center;
+}
+
+#p_01{
+	color: #ffffff;
 }
 
 ul#menu{
@@ -51,4 +58,38 @@ ul#menu li a {
 ul#menu  li a:hover,
 ul#menu  li a.active {
   color: #FFFF00;
+}
+
+/* Button */
+
+.btn{
+	text-align: right;
+	font-family: 標楷體 , 微軟正黑體 , Arial;
+	display: inline-block;
+	color: black;
+	font-size: 0.8em;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	border: thin solid gray;
+	background: linear-gradient( #F7F7F7, #DEDEDE);
+}
+
+/* Messages */
+
+.success, .error{
+	width: 160px;
+	padding: 1em;
+	text-align: center;
+}
+
+.success{
+	color: black;
+	background-color: #ddffdd;
+	border: thin solid green;
+}
+
+.error{
+	color: black;
+	background-color: #fbd9d8;
+	border: thin solid red;
 }

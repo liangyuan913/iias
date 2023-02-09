@@ -1,12 +1,13 @@
 
 #title, #issuingTime{
 	text-align: left;
-	color: #FFDDAA;
+	color: #ff4d4d;
 }
 
 .noticeContent{
 	text-align: left;
-	color: #000000;
+	font-weight:bold;
+	color: #375886;
 	padding: 20px;
 	background-color: #e9e9e9;
 	border: thin solid gray;
@@ -19,11 +20,16 @@
 }
 
 .comment{
-	font-size: 0.8em;
-	color: #FFBB66;
+	font-size: 1em;
+	color: #12a370;
+	font-weight:bold;
 }
 
 .commentTime{
-	font-size: 0.6em;
-	color: #66FF66;
+	font-size: 1em;
+	color: #c58816;
+}
+
+input[type=text]{
+	padding: 0.4em;
 }

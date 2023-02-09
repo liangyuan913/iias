@@ -1,0 +1,15 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static '/notice/css/notice.css' %}">
+{% endblock %}
+{% block tag %}noticeCreate{% endblock %}
+{% block heading %}公告發佈新增{% endblock %}
+{% block content %}
+<form method="post" action="{% url 'notice:noticeCreate' %}">
+	{% csrf_token %}
+	{{ noticeForm.as_p }}
+	<input class="btn" type="submit" value="送出">
+	<a class="btn" href="{% url 'notice:notice' %}">取消</a>
+</form>
+{% endblock %}
